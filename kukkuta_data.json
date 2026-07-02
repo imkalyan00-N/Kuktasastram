@@ -1,0 +1,22 @@
+{
+  "directions": {
+    "Vennela": {
+      "Sunday": "North-East",
+      "Friday": "West"
+    }
+  },
+  "vanthulu": {
+    "Cheekati": {
+      "Thursday": {
+        "vanthu_2": {
+          "winner": "Nemali",
+          "defeats": ["Kaaki", "Dega"]
+        },
+        "vanthu_3": {
+          "winner": "Kodi",
+          "defeats": ["All"]
+        }
+      }
+    }
+  }
+}
