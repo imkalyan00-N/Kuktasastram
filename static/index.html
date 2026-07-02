@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kukkuta Sastram Predictor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="glow-text">KUKKUTA SASTRAM</h1>
+        <p class="subtitle">Aura & Astrological Predictions</p>
+
+        <form id="predictForm">
+            <div class="input-group">
+                <label>Date (July 2 - July 10, 2026):</label>
+                <input type="date" id="matchDate" min="2026-07-02" max="2026-07-10" value="2026-07-02" required>
+            </div>
+
+            <div class="input-group">
+                <label>Time Slot (వంతు):</label>
+                <select id="timeSlot">
+                    <option value="1">1వ వంతు (Morning to 12 PM)</option>
+                    <option value="2">2వ వంతు (12:00 PM - 2:24 PM)</option>
+                    <option value="3">3వ వంతు (2:24 PM - 4:48 PM)</option>
+                    <option value="4">4వ వంతు (4:48 PM - 6:00 PM)</option>
+                    <option value="5">5వ వంతు (After 6 PM)</option>
+                </select>
+            </div>
+
+            <div class="vs-container">
+                <div class="input-group">
+                    <label>Punju 1:</label>
+                    <select id="punju1">
+                        <option value="Kodi">కోడి (Kodi)</option>
+                        <option value="Dega">డేగ (Dega)</option>
+                        <option value="Kaaki">కాకి (Kaaki)</option>
+                        <option value="Nemali">నెమలి (Nemali)</option>
+                        <option value="Pingali">పింగళి (Pingali)</option>
+                    </select>
+                </div>
+                <div class="vs-text">VS</div>
+                <div class="input-group">
+                    <label>Punju 2:</label>
+                    <select id="punju2">
+                        <option value="Kaaki">కాకి (Kaaki)</option>
+                        <option value="Dega">డేగ (Dega)</option>
+                        <option value="Kodi">కోడి (Kodi)</option>
+                        <option value="Nemali">నెమలి (Nemali)</option>
+                        <option value="Pingali">పింగళి (Pingali)</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="submit" class="glow-btn">PREDICT MATCH 🚀</button>
+        </form>
+
+        <div id="resultBox" class="hidden">
+            <h2 id="winnerText"></h2>
+            <p id="directionText"></p>
+            <p id="reasoningText" class="reasoning"></p>
+        </div>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
