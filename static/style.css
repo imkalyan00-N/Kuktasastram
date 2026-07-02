@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #050505;
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background: rgba(20, 20, 20, 0.8);
+    border: 1px solid #333;
+    border-radius: 15px;
+    padding: 40px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 20px rgba(0, 255, 204, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.glow-text {
+    font-family: 'Cinzel', serif;
+    text-align: center;
+    font-size: 2rem;
+    color: #00ffcc;
+    text-shadow: 0 0 10px rgba(0, 255, 204, 0.5);
+    letter-spacing: 2px;
+    margin-bottom: 5px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #888;
+    font-size: 0.9rem;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+select, input {
+    background: #111;
+    border: 1px solid #444;
+    color: #fff;
+    padding: 12px;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+    outline: none;
+    transition: 0.3s;
+}
+
+select:focus, input:focus {
+    border-color: #00ffcc;
+    box-shadow: 0 0 8px rgba(0, 255, 204, 0.3);
+}
+
+.vs-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.vs-container .input-group {
+    width: 42%;
+}
+
+.vs-text {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    color: #ff3366;
+    text-shadow: 0 0 8px rgba(255, 51, 102, 0.6);
+}
+
+.glow-btn {
+    width: 100%;
+    padding: 15px;
+    background: transparent;
+    border: 2px solid #00ffcc;
+    color: #00ffcc;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.glow-btn:hover {
+    background: #00ffcc;
+    color: #000;
+    box-shadow: 0 0 15px #00ffcc;
+}
+
+#resultBox {
+    margin-top: 30px;
+    padding: 20px;
+    background: #111;
+    border-radius: 8px;
+    border-left: 4px solid #ff3366;
+    text-align: center;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.hidden {
+    display: none;
+}
+
+#winnerText {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+#directionText {
+    color: #00ffcc;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.reasoning {
+    font-size: 0.85rem;
+    color: #888;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
