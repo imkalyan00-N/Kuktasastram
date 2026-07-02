@@ -1,22 +1,28 @@
 {
   "directions": {
-    "Vennela": {
-      "Sunday": "North-East",
-      "Friday": "West"
+    "Cheekati": {
+      "Thursday": "తూర్పు (East)",
+      "Friday": "పడమట (West)",
+      "Saturday": "దక్షిణం (South)",
+      "Sunday": "తూర్పు (East)"
     }
   },
   "vanthulu": {
     "Cheekati": {
-      "Thursday": {
-        "vanthu_2": {
-          "winner": "Nemali",
-          "defeats": ["Kaaki", "Dega"]
-        },
-        "vanthu_3": {
-          "winner": "Kodi",
-          "defeats": ["All"]
-        }
-      }
+      "Thursday": [
+        {"time": "1వ వంతు (Morning)", "winner": "Dega", "defeats": ["Kodi", "Pingali"]},
+        {"time": "2వ వంతు (12:00 PM - 2:24 PM)", "winner": "Nemali", "defeats": ["Kaaki", "Dega"]},
+        {"time": "3వ వంతు (2:24 PM - 4:48 PM)", "winner": "Kodi", "defeats": ["Kaaki", "Dega", "Nemali", "Pingali"]},
+        {"time": "4వ వంతు (4:48 PM - 6:00 PM)", "winner": "Tella Poda Kodi", "defeats": ["Nemali", "Kaaki"]},
+        {"time": "5వ వంతు (Evening)", "winner": "Kaaki", "defeats": ["Dega", "Kodi"]}
+      ],
+      "Friday": [
+        {"time": "1వ వంతు", "winner": "Kaaki", "defeats": ["Kodi"]},
+        {"time": "2వ వంతు", "winner": "Nemali", "defeats": ["Kodi", "Kaaki"]},
+        {"time": "3వ వంతు", "winner": "Kodi", "defeats": ["Kaaki", "Dega"]},
+        {"time": "4వ వంతు", "winner": "Pingali", "defeats": ["Kaaki", "Dega", "Nemali"]},
+        {"time": "5వ వంతు", "winner": "Erra Myla", "defeats": ["Kodi", "Kaaki"]}
+      ]
     }
   }
 }
